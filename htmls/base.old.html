@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>户外北京</title>
+	<meta name="generator" content="TextMate http://macromates.com/">
+	<meta name="author" content="刘 智勇">
+	<link rel="stylesheet" href="{{ static_url('css/base.css') }}">
+	{% block static %}{% end %}
+	<!-- Date: 2011-06-10 -->
+</head>
+<body id="documentation" class="default">
+	<div id="container">
+		<div id="header" class="top-nav">
+			<div class="bd">
+			<div id="hd-left" class="top-nav-items">
+				<ul>
+					<li><a href="/people/uid/">我的户外:</a></li>
+					<li><a href="">登山</a></li>
+					<li><a href="">滑雪</a></li>
+					<li><a href="">游泳</a></li>
+					<li><a href="" class="gray-static">腐败</a></li>
+					<li><a href="" class="gray-static">自驾游</a></li>
+				</ul>
+			</div>
+			<div id="hd-right" class="top-nav-info">
+				{% if current_user %}
+				<span><a href="/people/mail/">飞鸽传书(5)</a></span>
+				<span><a href="/people/edit/?goto={{ request.uri }}">设置{{current_user}}</a></span>|
+				<span><a href="/logout/?goto={{ request.uri }}">{{ _("退出") }}</a></span>
+				{% else %}
+				<span><a href="/login/?goto={{ request.uri }}">{{ _("登陆") }}</a></span>
+				<span><a href="/register/?goto={{ request.uri }}">{{ _("注册") }}</a></span>
+				{% end %}
+			</div>
+		</div>
+		</div>
+		<div id="bodier">
+			<div style="color:red;">{% if warning %}{{ warning }}{% end %}</div>
+			{% block bodier %}{% end %}
+		</div>
+		<div id="footer">
+			<div class="bd">
+				<a href="/sitemap">网站地图</a><a href="/navigation">户外导航</a><a href="/joinus">加入我们</a><a href="/myheart">我心户外</a>
+			</div>
+			{% block footer %}{% end %}
+		</div>
+	</div>
+</body>
+</html>

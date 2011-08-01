@@ -1,0 +1,64 @@
+{% extends super.html %}
+
+{% block static_inherit %}
+	<link rel="stylesheet" href="{{ static_url('css/weibo.css') }}">
+{% end %}
+
+{% block bodier-mleft %}
+<div class="grid-16-8 clearfix">
+    <div class="article">
+		<div class="clear"></div>
+		<div class="xbar"><div>
+        	<a href="/weibo/uid/edit_sync/">微博同步</a>
+        	<a href="/weibo/uid/edit_status/">动态消息</a>
+        	<span class="now"><span>基本设置</span></span>
+		</div></div>
+		<div class="clear"></div>
+		<form method="post" name="lzform" id="lzform">
+			<table width="100%" cellpadding="5" align="center" style="clear:both">
+				<tbody><tr>
+    				<td valign="top" align="right" class="m">名　号: </td>
+    				<td valign="top">
+						<input type="text" value="一米七三" maxlength="15" size="15" name="pf_name">
+						<br>名号30天内只能修改一次。<br>
+    				</td>
+				</tr>
+				<tr>
+    				<td valign="top" align="right" class="m">我的域名:</td>
+    				<td valign="top">qisan</td>
+				</tr>
+				<tr><td valign="top" align="right" class="m">头　像:</td>
+					<td valign="top"><img style="margin:10px;float:left" src="http://img3.douban.com/icon/ul2074346-2.jpg">
+    					<div style="margin:10px;float:left"><img src="http://img3.douban.com/icon/u2074346-2.jpg"><br>头像图标</div>
+ 						<a style="margin:10px;float:left" href="/accounts/user_icon/">更新</a><p></p>
+						<br><br>
+					</td>
+				</tr>
+			</tbody></table>
+			<div class="group_banned">
+				<span class="gact fright">&gt;&nbsp;<a href="/accounts/suicide/" rel="nofollow">删除帐号</a></span>
+			</div>
+		</form>    
+	</div>
+</div>
+
+{% end %}
+
+{% block bodier-mright %}
+<div id="weibo-user">
+	<div class="user_head">
+		<img class="userface" src="http://tp2.sinaimg.cn/1683546773/50/5603268482/1" title="一米七三2010">
+		<div class="weibo-user-info">
+			<strong><a title="一米七三2010" namecard="true" uid="" href="">一米七三2010</a></strong><br/>
+			<p>北京朝<em>阳区</em></p>
+		</div>
+	</div>
+	<div class="weibo-user-intro">
+		<ul>
+			<li><a href="">57</a><div>关注</div></li>
+			<li><a href="">19</a><div>粉丝</div></li>
+			<li><a href="">54</a><div>微博</div></li>
+		</ul>
+	</div>
+</div>
+{% end %}

@@ -1,0 +1,92 @@
+/* 
+xiha.com by yimiqisan (yimiqisan@73huwai.com)
+Copyright (c) 2011 七三工作室. Please don't steal.
+*/
+
+/* RESET */
+html {margin:0;padding:0;border:0;background:white;color:black;}
+body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section {margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, dialog, footer, header, hgroup, menu, nav, section {display:block;}
+body {line-height:1.5;}
+body, th, td { font:12px/1.4em Verdana,sans-serif; }
+ol,ul { list-style:none; }
+table {border-collapse:separate;border-spacing:0;}
+caption, th, td {text-align:left;font-weight:normal;float:none !important;}
+table, th, td {vertical-align:middle;}
+blockquote:before, blockquote:after, q:before, q:after {content:'';}
+blockquote, q {quotes:"" "";}
+a{text-decoration:none;cursor:pointer;color:#003399;}
+a:hover{color:white;background:none repeat scroll 0 0 #003399;}
+a img {border:none;}
+:focus {outline:0;}
+a:active {outline:none;}
+
+/* SETUP */
+#container {position:relative;display:block;}
+
+/* HEADER */
+#header{border-bottom:1px dashed #D4D4D4;clear:both;color:#D4D4D4;height:30px;width:100%;}
+#hd{margin:0 auto;width:1000px;}
+#hd-left{width:100px;}
+#hd-right{width:900px;float:right;}
+#hd-rt-navi{float:left;font-size:15px;padding-top:3px;}
+#hd-rt-navi li{display: inline;float: left;margin: 2px 20px 0 0;}
+#hd-rt-info{float:right;padding-top:10px;}
+#hd-rt-info a{padding:10px 5px 5px 5px;}
+#hd-rt-info .on, #hd-rt-info a:hover{padding:10px 5px 5px 5px;background:#454EFC;color:white;border-bottom:1px solid #454EFC;}
+
+/* BODY */
+#bodier{margin:0 auto;width:1000px;clear:both;}
+#bd-navi{width:100px;min-height:500px;position:fixed;z-index:999;display:block;float:right;}
+#bd-top{width:900px;height:30px;width:900px;position:relative;float:right;}
+#search{position:absolute;right:0px;width:250px;background:#454EFC;color:white;}
+#search input{width:200px;margin:5px 0 5px 5px;}
+#search button{margin-right:5px;}
+#account{position:absolute;right:0px;width:150px;background:white;color:#3376DF;border:1px solid #BEBEBE;}
+#notice{position:absolute;right:0px;width:250px;background:white;color:#3376DF;border:1px solid #BEBEBE;}
+#account li{height:30px;font-size:14px;text-align:center;padding-top:10px;}
+#account li:hover{background:#EFF3FB;color:#3376DF;text-align:center;}
+#account li a:hover{background:#EFF3FB;color:#3376DF;}
+#notice span{height:30px;float:left;padding:10px 5px 5px 10px;font-size:14px;}
+#notice span:hover{background:#EFF3FB;color:#3376DF;text-align:center;}
+#notice span a:hover{background:#EFF3FB;color:#3376DF;}
+
+#bd-main{width:900px;min-height:500px;overflow:hidden;float:right;}
+.back-to {position:fixed;bottom:35px;right:10px;z-index:999;width:110px;overflow:hidden;zoom:1;-ie6-position-fixed-delay:200;}
+* html .back-to {_position: absolute;_zoom: expression("Expressions.style.position.fixed(ele);");}
+.back-to .back-home{float:right;display:block;width:50px;height:50px;background:url(http://a.xnimg.cn/imgpro/button/back-home.png) no-repeat 0 0;outline:0 none;text-indent:-9999em;}
+.back-to .back-home:hover{background-position:-50px 0;}
+.back-to .back-top{float:right;display:block;width:50px;height:50px;background:url(http://a.xnimg.cn/imgpro/button/back-top.png) no-repeat 0 0;margin-left:10px;outline:0 none;text-indent:-9999em;}
+.back-to .back-top:hover{background-position: -50px 0;}
+
+/* FOOTER */
+#footer{border-top:1px dashed #DDDDDD;color:#999999;margin-top:20px;overflow:hidden;padding:1em 0 1em 0;clear:both;}
+#ft{margin:0 auto;width:1000px;}
+#ft-left{width:100px;}
+#ft-right{width:900px;float:right;}
+#ft-right a{color:#999999;margin:0 10px 0 10px;float:right;}
+#ft-right a:hover{color:white;}
+ 
+/* COLOR */
+.black{color:black;}
+.white{color:white;}
+.orange{color:orange;}
+.red{color:red;}
+.yellow{color:yellow;}
+.blue{color:blue;}
+.green{color:green;}
+.purple{color:purple;}
+.gray{color:gray;}
+.gray-static{color:gray !important;}
+.gray-static:hover{color:white !important;}
+
+/* TOOLS */
+.clear {clear: both;font-size: 0;line-height: 0;}
+
+
+
+
+
+
+
+

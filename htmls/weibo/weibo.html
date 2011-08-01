@@ -1,0 +1,89 @@
+{% extends super.html %}
+
+{% block navier %}
+<div id="weibo-navi">
+	<div class="item">
+		<span><a>类型</a></span>
+		<ul>
+			<li><a>文字</a></li>
+			<li><a>图片</a></li>
+			<li><a>地图</a></li>
+			<li><a>视频</a></li>
+		</ul>
+	</div>
+	<div class="item">
+		<span><a>动态</a></span>
+		<ul>
+			<li><a>圈子</a></li>
+			<li><a>活动</a></li>
+			<li><a>装备</a></li>
+		</ul>
+	</div>
+</div>
+{% end %}
+{% block bodier-mleft %}
+<div id="mblog-send">
+	<form action="/weibo/uid/style/" method="post">
+		<textarea style="width:300px; height:50px;" name="utimeline"></textarea>&nbsp;&nbsp;
+		<input type="submit" value="发布">
+	</form>
+</div>
+<br/><br/>
+<div id="weibo-show" class="weibo-content">
+	<div class="content-show">
+		<ul class="weicontanier">
+			{% for msg in msg_l %}
+			<li class="weicontent">
+				<div class="weicontentbox">
+					<div class="weiface"><img src="" width="50" height="50" alt="头像" /></div>
+					<div class="weiarticle">
+						<p><strong>{{msg['author'].nick}}</strong>　{{msg['content']['text']}} </p>
+					</div>
+					<div class="weiinfo">
+						<span class="sendtime">{{msg['day']}} 来自<a href=""></a></span>
+						<span class="tool">
+							<a href="/weibo/uid/style?tp=fwd&tpid={{msg['_id']}}">引用</a> | 
+							<a href="/weibo/uid/style?tp=rpl&tpid={{msg['_id']}}">对话</a> | 
+							<a href="/weibo/uid/style?tp=del&tpid={{msg['_id']}}">删除</a>
+						</span>
+					</div>
+				</div>
+			</li>
+			{% end %}
+			<li class="weicontent">
+				<div class="weicontentbox">
+					<div class="weiface"><img src=msg.author.profile_image_url}} width="50" height="50" alt="头像" /></div>
+					<div class="weiarticle">
+						<p><strong>msg.author.name}}</strong>　msg.text}} </p>
+					</div>
+					<div class="weiinfo">
+						<span class="sendtime">msg.created_at}} 来自<a href="">msg.source}}</a></span>
+						<span class="tool"><a>转发</a> | <a>收藏</a> | <a>评论</a> | <a>对话</a> | <a>删除</a></span>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="clear"></div>
+	<div class="bbar">
+		<ul>
+			<li><a><<</a></li>
+			<li><a><</a></li>
+			<li class="page_select">1</li>
+			<li><a>2</a></li>
+			<li><a>3</a></li>
+			<li><a>4</a></li>
+			<li><a>5</a></li>
+			<li>...</li>
+			<li><a>198</a></li>
+			<li><a>199</a></li>
+			<li><a>200</a></li>
+			<li><a>201</a></li>
+			<li><a>></a></li>
+			<li><a>>></a></li>
+		</ul>
+	</div>
+</div>
+{% end %}
+
+{% block bodier-mright-added %}{% end %}

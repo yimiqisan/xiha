@@ -1,0 +1,37 @@
+{% extends ../huwai.html %}
+
+{% block static-added %}
+	<link rel="stylesheet" href="{{ static_url('css/user.css') }}">
+{% end %}
+
+{% block bodier-mleft %}{% end %}
+{% block bodier-mright %}
+	<div id="profile">
+		<div class="infobox">
+			<div class="exu"><span></span></div>
+			<div class="bd">
+				<img alt="" class="userface" src="http://img3.douban.com/icon/ul2074346-2.jpg">
+				<div class="user-info">
+					常居:&nbsp;<a href="http://beijing.douban.com">北京</a><br>
+					<div class="pl">qisan <br> 2007-12-08加入</div>
+				</div>
+				<div class="sep-line"></div>
+				<div class="user-intro">
+					<ul>
+						<li>爱好：<a>游泳</a>&nbsp&nbsp<a>健身</a>&nbsp&nbsp<a>登山</a></li>
+						<li>写了5篇<a href="/people/uid/writes/">游记</a></li>
+						<li>建立了２个<a href="/people/uid/albums/">相册</a></li>
+						<li>参加过６次<a href="/people/uid/events/">活动</a>&nbsp&nbsp组织了２次</li>
+						<li>加入了６个<a href="/people/uid/groups/">圈子</a></li>
+						<li>３０００<a href="/people/uid/score/">积分</a></li>
+						<li>６件<a href="/people/uid/tools/">装备</a></li>
+						<li>参与讨论了７个<a href="/people/uid/topics/">话题</a>其中２次发起</li>
+					</ul>
+					<span style="display:none;" class="attn" id="intro_error"></span>
+				</div>
+			</div>
+		</div>
+		<div class="exd"><span></span></div>
+	</div>
+	{% block bodier-mright-added %}{% end %}
+{% end %}

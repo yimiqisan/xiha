@@ -1,0 +1,12 @@
+{% extends base.html %}
+
+{% block bodier %}
+<form action="/register" method="post">
+	email: <input type="email" name="email"/><br/><br/>
+	passwd:<input type="password" name="passwd"/>&nbsp&nbsp&nbsp&nbsp
+	repasswd:<input type="password" name="repwd"/><br/><br/>
+	<hr/>
+	nick:<input type="text" name="nick"/><br/><br/>
+	<input type="submit" value="register">&nbsp&nbsp&nbsp&nbsp<a href={{request.uri}}>skip</a>
+</form>
+{% end %}

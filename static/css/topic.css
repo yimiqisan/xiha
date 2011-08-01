@@ -1,0 +1,9 @@
+#header h1#logo { margin:0; width:111px; height:41px; position:absolute; bottom:10px; left:25px; }
+
+#wrapper{margin:0 auto;width:950px;}
+#bodier-top{background:none repeat scroll 0 0 transparent;margin:0 0 40px;width:100%;}
+#bodier-middle{min-height:420px;}
+#bodier-mleft{width:650px;float:left;}
+#bodier-mright{width:300px;float:left;}
+
+#rss-take input.text{width:10px;}

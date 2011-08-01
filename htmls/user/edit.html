@@ -1,0 +1,9 @@
+{% extends super.html %}
+
+{% block bodier-mleft %}
+<form action="/people/edit/" method="post">
+	nick: <input type="text" name="nick"/><br/><br/>
+	<input type="submit" value="设置">
+</form>
+{% end %}
+{% block bodier-mright-added %}{% end %}

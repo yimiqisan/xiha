@@ -1,0 +1,18 @@
+{% extends base.html %}
+
+{% block bodier %}
+<br/>
+<form action="/login/" method="post">
+	email: <input type="email" name="email"/><br/><br/>
+	passwd:<input type="password" name="passwd"/><br/><br/>
+	<input type="submit" value="login">
+</form>
+<br/><br/>
+<div>
+	{% if sina_id %}
+		<a style="color:red;" href="/people/sinalogin/">不关联了,直接登陆</a>
+	{% else %}
+		<a href="/people/auth?goto={{request.uri}}">用新浪微博账号登陆</a>
+	{% end %}
+</div>
+{% end %}

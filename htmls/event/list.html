@@ -1,0 +1,18 @@
+{% extends super.html %}
+
+{% block bodier-mleft %}
+<div id="rss-list">
+	<span>内容如下：</span><br/><br/>
+	{{ data }}
+</div>
+{% end %}
+{% block bodier-mright %}
+	<div id="event-take">
+	<form action="/event/list/" method="post">
+		site:<input type="text" style="width:200px;" name="site" value="http://www.517huwai.com/Activity/index/limit/week"/>&nbsp&nbsp
+		<input type="submit" value="开拔">
+	</form>
+</div>
+{% end %}
+
+

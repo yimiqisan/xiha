@@ -1,0 +1,17 @@
+#header h1#logo { margin:0; width:111px; height:41px; position:absolute; bottom:10px; left:25px; }
+
+#bodier-top{ float:left;width:100em;height:40em;position:relative; }
+#bodier-top div{ float:left; }
+#bodier-top h1{ float:left; }
+#bodier-top div ul{ position:relative; }
+#bodier-top div ul li{ float:left; padding:.5em 3em .5em 0;}
+#glable-search {float:left; padding:1.2em 3em .5em 0;}
+
+#bodier-bleft{float:left;width:70em;}
+#bodier-bright{width:30em;border-left: 1px dashed #DDDDDD;position:absolute;top:1.5em;left:73em;}
+#show-box{width:30em;min-height:20em;background:#B2FFB2;color:#184818;}
+#show-box div{display:block;float:left;}
+.photo100{float:left;margin:5px 10px 0 5px;width:100px;height:100px;}
+.photo100 img{ padding:1px; border:white solid 3px;}
+#show-box a{background:#B2FFB2;color:#184818;}
+#show-box a:hover{background:#184818;color:white;cursor:pointer;}

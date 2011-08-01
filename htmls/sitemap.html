@@ -1,0 +1,89 @@
+{% extends base.html %}
+
+{% block bodier %}
+<div>
+基础：
+<ul>
+	<li>A. 用 户:</li>
+	<li>B. 微 博:</li>
+	<li>C. 装 备:　二　手　、品　牌　、淘　宝　；想　买　、评　价　、出　价</li>
+	<li>D. 相 册:　可　引　用　、</li>
+	<li>E. 地 图:</li>
+	<li>F. 话 题:　投　票　、测　试　、公　告　、知　道 、RSS</li>
+	<li>G.　积　分:　如　何　得　、如　何　用</li>
+	<li>H.　飞　鸽　传　书:</li>
+</ul>
+公共：
+<ul>
+	<li>1. /</li>
+	<li>2. /search</li>
+	<li>3. /login		登陆</li>
+	<li>4. /logout	登出</li>
+	<li>5. /register	注册</li>
+</ul>
+微博：/weibo
+<ul>
+	<li>1./weibo/{uid}/style[all / text / photo / video / orign]微博首页１</li>
+	<li>2./weibo/{uid}/dynamic[event / vote / test / write / deal]微博首页２</li>
+	<li>3./weibo/{uid}/follow	关注</li>
+	<li>4./weibo/{uid}/fans	粉丝</li>
+	<li>5./weibo/{uid}/profile	我的微博</li>
+	<li>6./weibo/{uid}/friends	相互关注</li>
+	<li>7./weibo/{uid}/edit	微博设置</li>
+</ul>
+话题：/topic
+<ul>
+	<li>1./topic/{tid}</li>
+</ul>
+户外秀：
+<ul>
+	<li>1. /people/{uid}/		我的首页</li>
+	<li>2. /people/{uid}/tags	爱好</li>
+	<li>3. /people/{uid}/writes	游记</li>
+	<li>4. /people/{uid}/albums	相册</li>
+	<li>5. /people/{uid}/topics	话题</li>
+	<li>6. /people/{uid}/events	活动</li>
+	<li>7. /people/{uid}/groups 圈子</li>
+	<li>8. /people/{uid}/tools 	装备</li>
+	<li>9. /people/{uid}/score 	积分</li>
+	<li>10. /people/mail		书信</li>
+	<li>11. /people/edit		设置</li>
+</ul>
+圈子：/group
+<ul>
+	<li>1. /group/{gid}		xx小组首页</li>
+	<li>2. /group/{gid}/topics	话题列表</li>
+	<li>3./group/{gid}/members成员列表</li>
+	<li>4./group/{gid}/topics	话题列表</li>
+	<li>5./group/{gid}/eidt	编辑</li>
+	<li>6./group/{gid}/events	活动列表</li>
+	<li>7./group/{gid}/albums	相册</li>
+	<li>8./group/{gid}/weibo	微博</li>
+	<li>9./group/{gid}/like	收藏</li>
+</ul>
+活动：/event
+<ul>
+	<li>1. /event/{eid}/topics		话题</li>
+	<li>2. /event/{eid}/members		成员</li>
+	<li>3. /event/{eid}/album		活动相册(1)</li>
+	<li>4. /event/{eid}/route		路线地图</li>
+	<li>5. /event/{eid}/weibo		微博</li>
+	<li>6. /event/{eid}/insure		保险</li>
+ 	<li>7. /event/{eid}/support		赞助商</li>
+</ul>
+淘装备　/market
+<ul>
+	<li>1. /market/taobao		淘宝</li>
+	<li>2. /market/used			二手</li>
+	<li>3. /market/lease		租赁</li>
+	<li>4. /market/regie		专卖</li>
+</ul>
+</div>
+应用　/app
+<ul>
+	<li>1. /app/{aid}			介绍</li>
+	<li>2. /app/{aid}/fans		粉丝</li>
+	<li>3. /app/{aid}/topics	话题</li>
+	<li>4. /app/{aid}/weibo		微博</li>
+</ul>
+{% end %}

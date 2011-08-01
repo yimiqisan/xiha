@@ -1,0 +1,41 @@
+{% extends ../huwai.html %}
+
+{% block static-added %}
+	<link rel="stylesheet" href="{{ static_url('css/weibo.css') }}">
+	<script type='text/javascript'>
+		$(document).ready(function(){
+			('#close-sidebar').toggle(function(){
+				$(this).text("显示侧边栏");
+				$('#sidebar').hide();
+				$('#content').animate({width: "200px"}, 1000);
+			},function(){
+				$(this).text("关闭侧边栏");
+				$('#sidebar').delay(800).show(0);
+				$('#content').animate({width: "100px"}, 800);
+			});
+		});
+	</script>
+{% end %}
+
+{% block bodier-mleft %}{% end %}
+
+{% block bodier-mright %}
+<div id="weibo-user">
+	<div class="user_head">
+		<img class="userface" src="http://tp2.sinaimg.cn/1683546773/50/5603268482/1" title="一米七三2010">
+		<div class="weibo-user-info">
+			<strong><a title="一米七三2010" namecard="true" uid="" href="">一米七三2010</a></strong><br/>
+			<p>北京朝<em>阳区</em></p>
+		</div>
+	</div>
+	<div class="weibo-user-intro">
+		<ul>
+			<li><a href="/weibo/uid/follow/">57</a><div>关注</div></li>
+			<li><a href="/weibo/uid/fans/">19</a><div>粉丝</div></li>
+			<li><a href="/weibo/uid/profile/">54</a><div>微博</div></li>
+		</ul>
+	</div>
+	{% if att %}<a>取消关注</a>{% else %}<a onclick=attetion('id')>关注</a>{% end %}
+</div>
+{% block bodier-mright-added %}{% end %}
+{% end %}

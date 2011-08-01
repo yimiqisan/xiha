@@ -1,0 +1,162 @@
+//F2 start
+#weibo-user{width:300px;height:200px;background:#FDF9C5;}
+#weibo-user{width:300px;height:200px;background:#FDF9C5;}
+.user_head{}
+.user_head img{width:50px;height:50px;border:1px solid blue;}
+.userface{float:left;margin: 1px 10px 8px 0;}
+.weibo-user-intro{height:50px;clear:both;margin:40px auto;}
+.weibo-user-intro li{float:left;margin-left:10px;}
+.weibo-user-intro a{text-align:center;margin:1px 1px;font-size:25px;text-align:center;}
+.weibo-user-intro li div{color:#666666;text-align:center;}
+//F2 end
+
+
+//base start
+#content {min-height: 420px;}
+h1 {color: #494949;display: block;font-size: 25px;font-weight: bold;line-height: 1.1;margin: 0;padding: 0 0 15px;word-wrap: break-word;}
+form {border: 0 none;margin: 0;}
+ul {margin: 0;padding: 0;list-style: none outside none;}
+element.style {color: #D4D4D4;}
+//base end
+
+
+//E2 start
+.m {
+    color: #006600;
+    font-size: 14px;
+    line-height: 120%;
+}
+.clearfix {
+    display: block;
+}
+.grid-16-8 .article {
+    float: left;
+    padding-right: 40px;
+    width: 590px;
+}
+.xbar {
+    background: url("/static/img/zbar.gif") no-repeat scroll 0 0 transparent;
+    float: right;
+    margin-bottom: 21px;
+    overflow: hidden;
+    width: 100%;
+}
+.xbar div {
+    background: url("/static/img/zbar.gif") no-repeat scroll right top transparent;
+    float: right;
+    margin-left: 5px;
+    padding-right: 35px;
+}
+.xbar a {
+    display: block;
+    float: right;
+    line-height: 14px;
+    margin: 5px 5px 1px;
+    padding: 3px 5px 2px;
+    text-decoration: none;
+}
+.xbar span.now {
+    background: url("/static/img/wztab.gif") no-repeat scroll right top transparent;
+    display: block;
+    float: right;
+    margin: 0 5px;
+    padding: 0 10px 0 0;
+}
+.xbar span.now span {
+    background: url("/static/img/wztab.gif") no-repeat scroll 0 0 transparent;
+    display: block;
+    padding: 6px 1px 5px 11px;
+}
+.group_banned {
+    text-align: right;
+}
+.fright {
+    float: right;
+}
+.gact {
+    color: #BBBBBB;
+    cursor: pointer;
+    font-size: 12px;
+    text-align: center;
+}
+.gact a:link, a.gact:link {
+    color: #BBBBBB;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+}
+//E2 end
+
+
+//follow start
+//#user-list-follow{}
+#user-list-follow.user-list{width:600px;}
+.tbar{height:30px;background:#EC7D00;}
+.tbar span{float:left;margin:8px 0 0 5px;font-size:18px;color:white;}
+.tbar input{float:right;margin:1px 1px 0 0;height:20px;}
+.show-panel li{height:120px;width:100px;float:left;text-align:center;}
+.show-panel li img{height:100px;width:100px;}
+.bbar{height:20px;width:600px;padding:5px 5px;}
+.bbar ul{float:right;}
+.bbar li{display:inline;margin:5px 0 0 10px;}
+.bbar .page_select{background:orange;}
+//follow end
+
+//style start
+#weibo-show{}
+.weibo-content{width:600px;}
+.two-class-navi div{height:30px;font-size:18px;padding:10px 0 0 10px;background:pink;}
+.two-class-navi div a{margin-left:15px;margin-right:15px;}
+.two-class-navi ul{}
+.two-class-navi ul li{float:left;margin-left:10px;}
+.two-class-navi ul li a{}
+.content-show ul li{}
+
+/* CSS Document */
+.weicontanier{line-height:24px;text-align:justify;}
+.weibox{ background:url(/static/img/weibo/weibo_bg2.png) repeat-x; height:202px; width:100%; z-index:9999; }
+.weiform{ background:url(/static/img/weibo/weibo_bg.png) no-repeat;height:202px;padding:20px;}
+
+#status_div{ border:#b0b6c1 solid 1px; background:url(/static/img/weibo/weibo_bg3.png) repeat-x #fff; padding:5px;}
+#status{ border:0; width:100%; overflow:auto; background:none;}
+.button{ padding:5px 0;}
+.button div{ float:left; vertical-align:middle; margin-right:10px;}
+.button a{ color:#2c385e; }
+.face_box a{ background:url(/static/img/weibo/face.gif) no-repeat; padding-left:20px;}
+.topic_box a{ background:url(/static/img/weibo/d_28.gif) no-repeat; padding-left:20px;}
+.img_box{ display:inline-block; }
+.img_box a{ background:url(/static/img/weibo/d_25.gif) no-repeat; padding-left:20px;}
+.title{ font-size:14px; font-weight:bold; position:relative;}
+.title .l{ font-size:14px; color:#5c637b;}
+.timesend{ position:absolute; right:10px;}
+
+.hide{ display:none;}
+
+.weicontent{ position:relative; padding:10px; border-bottom:#e1e1e1 dashed 1px; clear:both;min-height:60px;}
+.weicontent:hover{ background:#f5f5f5; }
+.weiface{ float:left; margin-right:10px; }
+.weiface img{ padding:3px;border:#e1e1e1 solid 1px;}
+.weiarticle strong{ color:#0096dc; font-size:14px; font-weight:bold;}
+.weiarticle p{ font-size:14px; line-height:24px; font-family:Arial, Helvetica, sans-serif; text-align:justify; display:block;
+}
+.weiinfo{ position:relative; height:24px; }
+.tool{ position:absolute; right:0;}
+.tool a{ color:#3399cc; cursor:pointer;}
+.tool a:hover{ background:none repeat scroll 0 0 #3399cc; color:white; cursor:pointer;}
+.sendtime{ position:absolute; left:70px; color:#999;}
+//style end
+
+#weibo-navi{margin-top:300px;position:absolute;}
+#weibo-navi .item span a{font-size:14px;font-weight:bold;}
+#weibo-navi .item ul li a{font-size:12px;margin:5px 5px 5px 0;}
+
+
+
+
+
+
+
+
+
+
+

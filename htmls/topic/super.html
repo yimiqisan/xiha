@@ -1,0 +1,16 @@
+{% extends ../base.html %}
+
+{% block static %}
+	<link rel="stylesheet" href="{{ static_url('css/topic.css') }}">
+	{% block static_add %}{% end %}
+{% end %}
+{% block bodier %}
+<div id="wapper">
+	<div id="bodier-top"></div>
+	<div id="bodier-middle">
+		<div id="bodier-mleft">{% block bodier-mleft %}{% end %}</div>
+		<div id="bodier-mright">{% block bodier-mright %}{% end %}</div>
+	</div>
+</div>
+{% end %}
+

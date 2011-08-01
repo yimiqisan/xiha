@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>户外北京</title>
+	<meta name="generator" content="TextMate http://macromates.com/">
+	<meta name="author" content="刘 智勇">
+	<link rel="stylesheet" href="{{ static_url('css/base.css') }}">
+	<link rel="stylesheet" href="{{ static_url('css/jquery.jgrowl.css') }}">
+	<script language="javascript" src="{{ static_url('js/jquery.min.js') }}" type="text/javascript"></script>
+	<script language="javascript" src="{{ static_url('js/jquery.jgrowl.js') }}" type="text/javascript"></script>
+	<script language="javascript" src="{{ static_url('js/tools.js') }}" type="text/javascript"></script>
+	{% block static %}{% end %}
+	<!-- Date: 2011-06-10 -->
+</head>
+<body id="documentation" class="default">
+	<div id="container">
+		<div id="header">
+			<div id="hd">
+				<div id="hd-left"></div>
+				<div id="hd-right">
+					<div id="hd-rt-navi">
+						<ul>
+							<li><a href="/weibo/uid/style/">微博</a></li>
+							<li><a href="/people/uid/">个人秀</a></li>
+							<li><a href="/group/gid/">圈子</a></li>
+							<li><a href="/event/eid/">活动</a></li>
+							<li><a href="/market/mid/">淘装备</a></li>
+						</ul>
+					</div>
+					<div id="hd-rt-info">
+						{% if current_user %}
+						<span><a id="show-notice" onclick=showNavi("notice")>提示(5)</a></span>
+						<span><a id="show-account" onclick=showNavi("account")>{{current_user}}de账号</a></span>
+						<span><a id="show-search" onclick=showNavi("search")>{{ _("搜索") }}</a></span>
+						{% else %}
+						<span><a href="/login/?goto={{ request.uri }}">{{ _("登陆") }}</a></span>
+						<span><a href="/register/?goto={{ request.uri }}">{{ _("注册") }}</a></span>
+						{% end %}
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="bodier">
+			<div id="bd-navi">{% block navier %}{% end %}</div>
+			<div id="bd-top">
+				<form mothod="post" name="" action="" style="display: inline;">
+					<input type="text" value="是骡子是马,牵出来拍拍" maxlength="30" size="30" name="">
+					<input type="submit" value="修改" class="submit">
+					<input type="button" value="取消" class="cancel">
+				</form>
+			</div>
+			<div id="bd-main">
+				<div style="color:red;">{% if warning %}{{ warning }}{% end %}</div>
+				{% block bodier %}{% end %}
+			</div>
+			<div id="toolBackTo" class="back-to">
+				<a title="置顶" class="back-top">hide Navi</a>
+				<a title="首页" class="back-home" href="/">首页</a>
+			</div>
+		</div>
+		<div id="footer">
+			<div id="ft">
+				<div id="ft-left"></div>
+				<div id="ft-right">
+					<a href="/sitemap">网站地图</a>
+					<a href="/navigation">户外导航</a>
+					<a href="/joinus">加入我们</a>
+					<a href="/myheart">我心户外</a>
+					{% block footer %}{% end %}
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

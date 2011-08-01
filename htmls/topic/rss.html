@@ -1,0 +1,26 @@
+{% extends super.html %}
+
+
+{% block bodier-mleft %}
+<div id="rss-list">
+	<span>订阅内容：</span>
+	<ul>
+		{% for d in output.get('info', []) %}
+		<li>
+			<div><a href="{{d['link']}}">{{ d['title'] }}</a></div>
+			<p>{% raw d['description'] %}</p><br/>
+		</li>
+		{% end %}
+	</ul>
+</div>
+{% end %}
+{% block bodier-mright %}
+<div id="rss-take">
+	<form action="/topic/rss/" method="post">
+		feed:<input type="text" style="width:200px;" name="feed" value="feed://feed.feedsky.com/517huwai"/>&nbsp&nbsp
+		<input type="submit" value="订阅">
+	</form>
+	<br/><br/><br/>
+	<div>http://apple4.us/feed</div>
+</div>
+{% end %}
