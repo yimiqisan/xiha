@@ -278,6 +278,7 @@ class SinaLoginHandler(BaseHandler):
 class UserAuthHandler(BaseHandler):
     @session
     def get(self):
+        print '123123123'
         verifier = self.get_argument('oauth_verifier', None)
         auth = OAuthHandler(SINA_CONSUME_KEY, SINA_CONSUME_SECRET)
         if not verifier:
